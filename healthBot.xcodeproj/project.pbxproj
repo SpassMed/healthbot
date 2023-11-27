@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4436CEA2AFAE8030004D2E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436CE92AFAE8030004D2E4 /* AppDelegate.swift */; };
+		F4436CEC2AFAE8030004D2E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436CEB2AFAE8030004D2E4 /* SceneDelegate.swift */; };
+		F4436CEE2AFAE8030004D2E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436CED2AFAE8030004D2E4 /* ViewController.swift */; };
+		F4436CF12AFAE8030004D2E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4436CEF2AFAE8030004D2E4 /* Main.storyboard */; };
+		F4436CF32AFAE8050004D2E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4436CF22AFAE8050004D2E4 /* Assets.xcassets */; };
+		F4436CF62AFAE8050004D2E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4436CF42AFAE8050004D2E4 /* LaunchScreen.storyboard */; };
+		F4436D012AFAE8050004D2E4 /* healthBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436D002AFAE8050004D2E4 /* healthBotTests.swift */; };
+		F4436D0B2AFAE8050004D2E4 /* healthBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436D0A2AFAE8050004D2E4 /* healthBotUITests.swift */; };
+		F4436D0D2AFAE8050004D2E4 /* healthBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4436D0C2AFAE8050004D2E4 /* healthBotUITestsLaunchTests.swift */; };
+		F4C1B6A62AFDAB860094314B /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4C1B6A52AFDAB860094314B /* OpenAIKit */; };
+		F4C1B6A92AFDDE460094314B /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = F4C1B6A82AFDDE460094314B /* OpenAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4436CFD2AFAE8050004D2E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4436CDE2AFAE8030004D2E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4436CE52AFAE8030004D2E4;
+			remoteInfo = healthBot;
+		};
+		F4436D072AFAE8050004D2E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4436CDE2AFAE8030004D2E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4436CE52AFAE8030004D2E4;
+			remoteInfo = healthBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4436CE62AFAE8030004D2E4 /* healthBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4436CE92AFAE8030004D2E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4436CEB2AFAE8030004D2E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4436CED2AFAE8030004D2E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4436CF02AFAE8030004D2E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4436CF22AFAE8050004D2E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4436CF52AFAE8050004D2E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4436CF72AFAE8050004D2E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4436CFC2AFAE8050004D2E4 /* healthBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4436D002AFAE8050004D2E4 /* healthBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthBotTests.swift; sourceTree = "<group>"; };
+		F4436D062AFAE8050004D2E4 /* healthBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4436D0A2AFAE8050004D2E4 /* healthBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthBotUITests.swift; sourceTree = "<group>"; };
+		F4436D0C2AFAE8050004D2E4 /* healthBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4C1B6A22AFC13980094314B /* healthBotRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthBotRelease.entitlements; sourceTree = "<group>"; };
+		F4C1B6A32AFC30380094314B /* healthBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthBot.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4436CE32AFAE8030004D2E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1B6A92AFDDE460094314B /* OpenAI in Frameworks */,
+				F4C1B6A62AFDAB860094314B /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436CF92AFAE8050004D2E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436D032AFAE8050004D2E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4436CDD2AFAE8030004D2E4 = {
+			isa = PBXGroup;
+			children = (
+				F4436CE82AFAE8030004D2E4 /* healthBot */,
+				F4436CFF2AFAE8050004D2E4 /* healthBotTests */,
+				F4436D092AFAE8050004D2E4 /* healthBotUITests */,
+				F4436CE72AFAE8030004D2E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4436CE72AFAE8030004D2E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4436CE62AFAE8030004D2E4 /* healthBot.app */,
+				F4436CFC2AFAE8050004D2E4 /* healthBotTests.xctest */,
+				F4436D062AFAE8050004D2E4 /* healthBotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4436CE82AFAE8030004D2E4 /* healthBot */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1B6A32AFC30380094314B /* healthBot.entitlements */,
+				F4C1B6A22AFC13980094314B /* healthBotRelease.entitlements */,
+				F4436CE92AFAE8030004D2E4 /* AppDelegate.swift */,
+				F4436CEB2AFAE8030004D2E4 /* SceneDelegate.swift */,
+				F4436CED2AFAE8030004D2E4 /* ViewController.swift */,
+				F4436CEF2AFAE8030004D2E4 /* Main.storyboard */,
+				F4436CF22AFAE8050004D2E4 /* Assets.xcassets */,
+				F4436CF42AFAE8050004D2E4 /* LaunchScreen.storyboard */,
+				F4436CF72AFAE8050004D2E4 /* Info.plist */,
+			);
+			path = healthBot;
+			sourceTree = "<group>";
+		};
+		F4436CFF2AFAE8050004D2E4 /* healthBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4436D002AFAE8050004D2E4 /* healthBotTests.swift */,
+			);
+			path = healthBotTests;
+			sourceTree = "<group>";
+		};
+		F4436D092AFAE8050004D2E4 /* healthBotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4436D0A2AFAE8050004D2E4 /* healthBotUITests.swift */,
+				F4436D0C2AFAE8050004D2E4 /* healthBotUITestsLaunchTests.swift */,
+			);
+			path = healthBotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4436CE52AFAE8030004D2E4 /* healthBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4436D102AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBot" */;
+			buildPhases = (
+				F4436CE22AFAE8030004D2E4 /* Sources */,
+				F4436CE32AFAE8030004D2E4 /* Frameworks */,
+				F4436CE42AFAE8030004D2E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = healthBot;
+			packageProductDependencies = (
+				F4C1B6A52AFDAB860094314B /* OpenAIKit */,
+				F4C1B6A82AFDDE460094314B /* OpenAI */,
+			);
+			productName = healthBot;
+			productReference = F4436CE62AFAE8030004D2E4 /* healthBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4436CFB2AFAE8050004D2E4 /* healthBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4436D132AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBotTests" */;
+			buildPhases = (
+				F4436CF82AFAE8050004D2E4 /* Sources */,
+				F4436CF92AFAE8050004D2E4 /* Frameworks */,
+				F4436CFA2AFAE8050004D2E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4436CFE2AFAE8050004D2E4 /* PBXTargetDependency */,
+			);
+			name = healthBotTests;
+			productName = healthBotTests;
+			productReference = F4436CFC2AFAE8050004D2E4 /* healthBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4436D052AFAE8050004D2E4 /* healthBotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4436D162AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBotUITests" */;
+			buildPhases = (
+				F4436D022AFAE8050004D2E4 /* Sources */,
+				F4436D032AFAE8050004D2E4 /* Frameworks */,
+				F4436D042AFAE8050004D2E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4436D082AFAE8050004D2E4 /* PBXTargetDependency */,
+			);
+			name = healthBotUITests;
+			productName = healthBotUITests;
+			productReference = F4436D062AFAE8050004D2E4 /* healthBotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4436CDE2AFAE8030004D2E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F4436CE52AFAE8030004D2E4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F4436CFB2AFAE8050004D2E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F4436CE52AFAE8030004D2E4;
+					};
+					F4436D052AFAE8050004D2E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F4436CE52AFAE8030004D2E4;
+					};
+				};
+			};
+			buildConfigurationList = F4436CE12AFAE8030004D2E4 /* Build configuration list for PBXProject "healthBot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4436CDD2AFAE8030004D2E4;
+			packageReferences = (
+				F4C1B6A42AFDAB860094314B /* XCRemoteSwiftPackageReference "openai-kit" */,
+				F4C1B6A72AFDDE460094314B /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = F4436CE72AFAE8030004D2E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4436CE52AFAE8030004D2E4 /* healthBot */,
+				F4436CFB2AFAE8050004D2E4 /* healthBotTests */,
+				F4436D052AFAE8050004D2E4 /* healthBotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4436CE42AFAE8030004D2E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4436CF62AFAE8050004D2E4 /* LaunchScreen.storyboard in Resources */,
+				F4436CF32AFAE8050004D2E4 /* Assets.xcassets in Resources */,
+				F4436CF12AFAE8030004D2E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436CFA2AFAE8050004D2E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436D042AFAE8050004D2E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4436CE22AFAE8030004D2E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4436CEE2AFAE8030004D2E4 /* ViewController.swift in Sources */,
+				F4436CEA2AFAE8030004D2E4 /* AppDelegate.swift in Sources */,
+				F4436CEC2AFAE8030004D2E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436CF82AFAE8050004D2E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4436D012AFAE8050004D2E4 /* healthBotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4436D022AFAE8050004D2E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4436D0D2AFAE8050004D2E4 /* healthBotUITestsLaunchTests.swift in Sources */,
+				F4436D0B2AFAE8050004D2E4 /* healthBotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4436CFE2AFAE8050004D2E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4436CE52AFAE8030004D2E4 /* healthBot */;
+			targetProxy = F4436CFD2AFAE8050004D2E4 /* PBXContainerItemProxy */;
+		};
+		F4436D082AFAE8050004D2E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4436CE52AFAE8030004D2E4 /* healthBot */;
+			targetProxy = F4436D072AFAE8050004D2E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4436CEF2AFAE8030004D2E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4436CF02AFAE8030004D2E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4436CF42AFAE8050004D2E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4436CF52AFAE8050004D2E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4436D0E2AFAE8050004D2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4436D0F2AFAE8050004D2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4436D112AFAE8050004D2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthBot/healthBot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = healthBot/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Apps require your authorization to use your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Apps require your authorization to use your health data";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwliu.healthBot012;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4436D122AFAE8050004D2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = healthBot/healthBotRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = healthBot/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Apps require your authorization to use your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Apps require your authorization to use your health data";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwliu.healthBot012;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4436D142AFAE8050004D2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MRCRV9K34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spassmed.healthBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/healthBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/healthBot";
+			};
+			name = Debug;
+		};
+		F4436D152AFAE8050004D2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MRCRV9K34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spassmed.healthBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/healthBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/healthBot";
+			};
+			name = Release;
+		};
+		F4436D172AFAE8050004D2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MRCRV9K34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spassmed.healthBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = healthBot;
+			};
+			name = Debug;
+		};
+		F4436D182AFAE8050004D2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MRCRV9K34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spassmed.healthBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = healthBot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4436CE12AFAE8030004D2E4 /* Build configuration list for PBXProject "healthBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4436D0E2AFAE8050004D2E4 /* Debug */,
+				F4436D0F2AFAE8050004D2E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4436D102AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4436D112AFAE8050004D2E4 /* Debug */,
+				F4436D122AFAE8050004D2E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4436D132AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4436D142AFAE8050004D2E4 /* Debug */,
+				F4436D152AFAE8050004D2E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4436D162AFAE8050004D2E4 /* Build configuration list for PBXNativeTarget "healthBotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4436D172AFAE8050004D2E4 /* Debug */,
+				F4436D182AFAE8050004D2E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4C1B6A42AFDAB860094314B /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F4C1B6A72AFDDE460094314B /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4C1B6A52AFDAB860094314B /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C1B6A42AFDAB860094314B /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+		F4C1B6A82AFDDE460094314B /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C1B6A72AFDDE460094314B /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F4436CDE2AFAE8030004D2E4 /* Project object */;
+}

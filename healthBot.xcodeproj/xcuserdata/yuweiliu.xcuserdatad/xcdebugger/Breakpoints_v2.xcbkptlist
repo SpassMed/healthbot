@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2C4F035C-0F6D-4AE0-A546-B89C9A27CA0E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBEC2172-B6D4-4596-A9C6-AFFEB24F61BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "healthBot/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getTemperatureData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FBEC2172-B6D4-4596-A9C6-AFFEB24F61BD - 46df4d55e410a28e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in healthBot.ViewController.getTemperatureData() -&gt; ()"
+                  moduleName = "healthBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuweiliu/Documents/spass-med/healthBot/healthBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "FBEC2172-B6D4-4596-A9C6-AFFEB24F61BD - 46df4d55e410a28e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in healthBot.ViewController.getTemperatureData() -&gt; ()"
+                  moduleName = "healthBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuweiliu/Documents/spass-med/healthBot/healthBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA1543B6-1200-454B-81EE-0E9AC696CB48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "healthBot/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "getTemperatureData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EA1543B6-1200-454B-81EE-0E9AC696CB48 - 46df4d55e410a28e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in healthBot.ViewController.getTemperatureData() -&gt; ()"
+                  moduleName = "healthBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuweiliu/Documents/spass-med/healthBot/healthBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EA1543B6-1200-454B-81EE-0E9AC696CB48 - 46df4d55e410a28e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in healthBot.ViewController.getTemperatureData() -&gt; ()"
+                  moduleName = "healthBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuweiliu/Documents/spass-med/healthBot/healthBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
