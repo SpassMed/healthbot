@@ -151,7 +151,7 @@ class ViewController: UIViewController {
         
         // OpenAI configuration
         //let openAI = OpenAI(apiToken: "")
-        let configuration = OpenAI.Configuration(token: "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", organizationIdentifier: "org-jh7uuOZUv6DT47YwyhjBJlei", timeoutInterval: 60.0)
+        let configuration = OpenAI.Configuration(token: "your token", organizationIdentifier: "org-jh7uuOZUv6DT47YwyhjBJlei", timeoutInterval: 60.0)
         let openAI = OpenAI(configuration: configuration)
         
         // request query
@@ -173,6 +173,77 @@ class ViewController: UIViewController {
         
         
     }
+
+        
+    func callSpassmedAPI(question: String) async {
+        // 这个session可以使用刚才创建的。
+        let session = URLSession(configuration: .default)
+     
+        let url = "https://spass-api-1da65389f5b1.herokuapp.com/chat"
+        var request = URLRequest(url: URL(string: url)!)
+        request.setValue("*/*", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+   
+        request.httpMethod = "POST"
+        
+    
+        
+        
+        let jsonstr = "{\"chat_history\":[{\"role\":\"user\",\"content\":\""+question+"\"}],\"model_to_use\": \"openai\"}"
+        let jsondata = jsonstr.data(using: .utf8)
+        print("hi")
+
+        
+       
+       
+        //request.httpBody = postString.data(using: .utf8)
+        do {
+            // convert parameters to Data and assign dictionary to httpBody of request
+            let ok =  try JSONSerialization.jsonObject(with: jsondata!, options: .mutableContainers)
+            request.httpBody = try JSONSerialization.data(withJSONObject: ok, options: .prettyPrinted)
+            print(ok)
+            print("here")
+                
+          } catch let error {
+            print(error.localizedDescription)
+            return
+          }
+        
+        let task = try await URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            
+        
+            // Check for errors
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+
+            // Check if there is data
+            guard let responseData = data else {
+                print("No data received")
+                return
+            }
+
+            do {
+                // Parse the response data
+                
+                let jsonResponse = try NSString(data: responseData, encoding: String.Encoding.ascii.rawValue)! as String
+
+                // Handle the response as needed
+                print("Response: \(jsonResponse)")
+                self.messageLabel.animate(newText: jsonResponse, characterDelay: 0.07)
+
+            } catch let parsingError {
+                print("Error while parsing response: \(parsingError.localizedDescription)")
+            }
+        }
+
+        // Start the request
+        task.resume()
+    }
+
 //        let request = OpenAI.CompletionRequest(prompt: "你好，")
 //
 //            // 发送请求
@@ -251,7 +322,7 @@ class ViewController: UIViewController {
         let content = "Your temperature is " + String(temp) + " degrees celsius."// temperatureSamples[0].startDate
         print(content)
        
-        callOpenAIModelAPI(question: self.textview.text)
+        await callSpassmedAPI(question: self.textview.text)
           
                 
                 
